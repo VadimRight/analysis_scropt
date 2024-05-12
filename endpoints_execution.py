@@ -12,7 +12,7 @@ if mode == 1:
     path_to_data_file = "./docker_res/data.txt"
 
 
-for i in range(30):
+for i in range(50):
     with open("./jsons/test_user.json") as test_user_file:
         test_user_data = json.load(test_user_file)
     

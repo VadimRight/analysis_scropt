@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-with open("./local_machine_res", "r") as f:
+with open("./local_machine_res/data.txt", "r") as f:
     analysis_data_input = f.read()
-with open("./docker_res", "r") as f:
+with open("./docker_res/data.txt", "r") as f:
     analysis_data_docker_input = f.read()
  
 analysis_data = analysis_data_input.split(" ")
@@ -12,12 +12,12 @@ analysis_data_docker = analysis_data_docker_input.split(" ")
 
 analysis_data_docker = [float(i) for i in analysis_data_docker]
 analysis_data_docker = [int(i) for i in analysis_data_docker]
-analysis_data_docker = analysis_data_docker[2:]
+analysis_data_docker = analysis_data_docker[2:-1]
 
 
 analysis_data = [float(i) for i in analysis_data]
 analysis_data = [int(i) for i in analysis_data]
-analysis_data = analysis_data[2:]
+analysis_data = analysis_data[2:-1]
 
 
 x = range(1, len(analysis_data) + 1)

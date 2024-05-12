@@ -10,6 +10,8 @@ analysis_data = analysis_data_input.split(" ")
 analysis_data_docker = analysis_data_docker_input.split(" ")
 analysis_data = analysis_data[:-1]
 analysis_data_docker = analysis_data_docker[:-1]
+
+
 analysis_data_docker = [float(i) for i in analysis_data_docker]
 analysis_data_docker = [int(i) for i in analysis_data_docker]
 
